@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import Navigation from './Components/Navigation'
-import Featuare from './Components/Feature'
+import Projects from './Components/Projects'
 
 function App() {
   return (
   <>
   <Navigation/>
-  <Feature />
+  <Projects />
 
   <div className="content-container" style={{paddingLeft:"2.5rem"}}>
     <p>Welcome to the website.</p>
