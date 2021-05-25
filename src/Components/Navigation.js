@@ -1,13 +1,21 @@
 import react from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import './Navigation.css'
+
 
 const Navigation = () => {
     return(
-    <li style={{display:"inline-flex"}}>
-        <ul>Home</ul>
-        <ul>About</ul>
-        <ul>Projects</ul>
-        <ul>Contact</ul>
-    </li>
+    <Router>
+        <main>
+          <nav className="nav-bar">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/projects">Projects</a></li>
+            </ul>
+          </nav>
+        </main>
+    </Router>
     );
 }
 

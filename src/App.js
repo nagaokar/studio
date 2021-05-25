@@ -1,16 +1,48 @@
-import logo from './logo.svg';
+import { Fragment } from 'react';
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import './App.css';
-import Navigation from './Components/Navigation'
+// import Navigation from './Components/Navigation'
 
-function App() {
+export default function App() {
   return (
-    <div classname="content-container" style={{backgroundColor:"rgb(53,45,57)"}}>
-     <Navigation/>
-     <div className="body">
-       <p>lorem ipsum</p>
-     </div>
-    </div>
+    <Router>
+        <main>
+          <nav>
+            <ul>
+              <li><Link to="/">Home</Link> </li>
+              <li><Link to="/about">About</Link> </li>
+              <li><Link to="/projects">Projects</Link> </li>
+            </ul>
+          </nav>
+          
+          <Switch>          
+            <Route path="/" exact component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/projects" component={Projects} />
+            <Route render={() => <h1>404: Page not found</h1>} />
+          </Switch>
+
+        </main>
+    </Router>
   );
 }
 
-export default App;
+const Home = () => (
+  <Fragment>
+    <h1>Home</h1>
+  </Fragment>
+);
+
+const About = () => (
+  <Fragment>
+    <h1>About</h1>
+  </Fragment>
+
+);
+
+const Projects = () => (
+  <Fragment>
+    <h1>Projects</h1>
+  </Fragment>
+
+);
