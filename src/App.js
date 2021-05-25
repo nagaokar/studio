@@ -1,18 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 import Navigation from './Components/Navigation'
-import Projects from './Components/Projects'
 
 function App() {
   return (
-  <>
-  <Navigation/>
-  <Projects />
-
-  <div className="content-container" style={{paddingLeft:"2.5rem"}}>
-    <p>Welcome to the website.</p>
-  </div>
-  </>
+    <div classname="content-container" style={{backgroundColor:"rgb(53,45,57)"}}>
+     <Navigation/>
+     <div className="body">
+       <p>lorem ipsum</p>
+     </div>
+    </div>
   );
 }
 
