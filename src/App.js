@@ -13,7 +13,7 @@ import TokyoIzakaya from '../src/TokyoIzakaya_blurredPNG.png'
 export default function App() {
   return (
 
-    <Router style={{background:"none"}}>
+    <Router basename="/studio" style={{background:"none"}}>
         <main>
           {/* <nav classname="home-nav">
             <ul classname="nav-bar">
