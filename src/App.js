@@ -7,28 +7,22 @@ import Footer from './Components/Footer'
 
 import CityzenGameImg from '../src/CityzenGameImg.jpg'
 import TokyoIzakaya from '../src/TokyoIzakaya_blurredPNG.png'
-// import Navigation from './Components/Navigation'
+import Navigation from './Components/Navigation';
+// import ProjectCards from './Components/ProjectCards';
+import _404page from './Components/_404page';
+import ProjectsGrid from './Components/ProjectsGrid';
 
 
 export default function App() {
   return (
-
     <Router basename="/studio" style={{background:"none"}}>
         <main>
-          {/* <nav classname="home-nav">
-            <ul classname="nav-bar">
-                <li><Link className="text-link" to="/">Home</Link></li>
-                <li><Link className="text-link" to="/about">About</Link> </li>
-                <li><Link className="text-link" to="/projects">Projects</Link> </li>
-                <li><Link className="text-link" to="/contact">Contact</Link> </li>
-            </ul>
-          </nav> */}
           <Switch>          
             <Route path="/" exact component={Home} />
             <Route path="/about" component={About} />
             <Route path="/projects" component={Projects} />
             <Route path="/contact" component={Contact} />
-            <Route render={() => <h1>404: Page not found</h1>} />
+            <Route render={_404page} />
           </Switch>
         </main>
     </Router>
@@ -39,20 +33,9 @@ const Home = () => (
   <Fragment>
     <div className="home-bg" style={{backgroundImage:`url(${TokyoIzakaya})`}}>
     <h1 className="intro-text">NAGAOKA STUDIO</h1>
-
-    <nav classname="home-nav">
-        <ul classname="nav-bar">
-          <li><Link className="text-link" to="/">Home</Link></li>
-          <li><Link className="text-link" to="/about">About</Link> </li>
-          <li><Link className="text-link" to="/projects">Projects</Link> </li>
-          <li><Link className="text-link" to="/contact">Contact</Link> </li>
-        </ul>
-    </nav>
-
+    <Navigation/>
       <div className="footer">
-        <p>Cover Photo by <a href="https://unsplash.com/@agk42?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-          Alex Knight</a> on <a href="https://unsplash.com/s/photos/tokyo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-            Unsplash</a></p>
+        <Footer/>
       </div>
     </div>
   </Fragment>
@@ -64,6 +47,7 @@ const Home = () => (
 const About = () => (
   <Fragment>
     <h1>About</h1>
+    <Navigation/>
     <PlaceholderText/>
   </Fragment>
 
@@ -72,6 +56,8 @@ const About = () => (
 const Projects = () => (
   <Fragment>
     <h1>Projects</h1>
+    <Navigation/>
+    <ProjectsGrid/>
   </Fragment>
 
 );
@@ -79,5 +65,6 @@ const Projects = () => (
 const Contact = () => (
   <Fragment>
    <h1>Contact</h1>
+   <Navigation/>
    </Fragment> 
   );

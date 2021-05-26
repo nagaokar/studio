@@ -1,0 +1,28 @@
+/* .grid-container {
+    padding: 3rem;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 6px 6px;
+    grid-template-areas: 
+        "...."
+        "...."
+        "....";
+} */
+
+article {
+    margin: 1rem;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 4rem;
+    justify-content: center;
+}
+
+.project-img {
+    width: auto;
+    height: auto;
+}
