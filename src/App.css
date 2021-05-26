@@ -14,32 +14,13 @@ ul {
     justify-content: center;
 }
 
-nav {
-    background: none;
-}
+/*=============== Home ============================================================ */
 
 .content-container {
     width: 80%;
     align-items: center;
     text-align: center;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 6px 6px;
-    grid-template-areas: 
-        "...."
-        "...."
-        "....";
-}
-
-.nav-bar {
-    width: 50%;
     justify-content: center;
-    justify-content: center;
-    
 }
 
 .home-bg {
@@ -60,6 +41,84 @@ nav {
     text-align: center;
 }
 
+/*=============== Navigation ============================================================ */
+
+nav {
+    background: none;
+}
+
+
+.nav-bar {
+    width: 50%;
+    justify-content: center;
+    justify-content: center;
+    
+}
+
+/*=============== Projects ============================================================ */
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 4rem;
+    justify-content: center;
+}
+
+.project-card {
+    margin: 0.1rem;
+    position: relative;
+    text-align:center;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    color: rgb(255,252,249);
+}
+
+.project-card:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity:0%;
+    transition:0.5s ease;
+    background-color: #352d39;
+}
+
+.project-img {
+    width: auto;
+    height: auto;
+}
+
+.text-link-card {
+    color: rgb(255,252,249);
+    font-size: xx-large;
+    text-decoration:none;
+    text-decoration-color: rgb(255,252,249);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+/* .text-link-card:hover{
+    text-decoration: underline;
+    text-decoration-color:rgb(255,252,249);
+} */
+
+
+
+/* .project-img:hover {
+    filter: blur(70%);
+    opacity: 10%;
+} */
+
 .intro-text {
     padding-left: 0;
     font-size: 20ch;
@@ -67,6 +126,9 @@ nav {
     width: 50%;
     text-align: center;
 }
+
+
+/*=============== Footer ============================================================ */
 
 .footer {
     text-align: center;
