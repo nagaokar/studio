@@ -1,20 +1,21 @@
-import { Fragment } from 'react';
+import { Fragment, useState } from 'react';
 import { BrowserRouter as Router, Route, Link, Switch, useRouteMatch, useParams } from 'react-router-dom';
+import { Document, Page } from 'react-pdf'
+
 import './App.css';
 
 import PlaceholderText from './Components/PlaceholderText';
 import Footer from './Components/Footer'
-
-
 import Navigation from './Components/Navigation';
 import _404page from './Components/_404page';
 
 import cityzenProtoypeImg from './Media/cityzenPrototype.png'
-
 import TokyoIzakaya from './Media/TokyoIzakaya_blurredPNG.png'
-
+import cityzen1Portfolio from './Media/cityzen1Portfolio.pdf'
+import PDFviewer from './Components/PDFviewer';
 
 export default function App() {
+
   return (
     <Router basename="/studio" style={{background:"none"}}>
         <main>
@@ -65,6 +66,7 @@ const Projects = () => (
         <img className="project-img" src={cityzenProtoypeImg}/>
         <div className="overlay">
           <Link className="text-link-card" to="/cityzen1">Cityzen I</Link>
+          <p>MA Architecture // 2020-21</p>
         </div>
       </div>
     {/*=============== Cityzen 2 ============================================================ */}
@@ -72,6 +74,7 @@ const Projects = () => (
           <img className="project-img" src="https://via.placeholder.com/450"/>
           <div className="overlay">
             <Link className="text-link-card" to="/cityzen3">Cityzen II</Link>
+            <p>MA Architecture // 2020-21</p>
           </div>
         </div>
     {/*=============== Cityzen 3 ============================================================ */}
@@ -79,18 +82,17 @@ const Projects = () => (
           <img className="project-img" src="https://via.placeholder.com/450"/>
           <div className="overlay">
             <Link className="text-link-card" to="/cityzen3">Cityzen III</Link>
+            <p>MA Architecture // 2020-21</p>
           </div>
         </div>
     </div>
   </Fragment>
 );
 
-
 const Cityzen1 = () => (
   <Fragment>
     <Navigation/>
-    <iframe allowfullscreen allow="fullscreen" style="border:none;width:100%;height:326px;" 
-    src="//e.issuu.com/embed.html?backgroundColor=%352d39"></iframe>
+    <PDFviewer/>
   </Fragment>
   );
 
