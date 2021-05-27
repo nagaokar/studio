@@ -1,10 +1,12 @@
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 
-const slider = (
+const ImageGallery = () => {
+    return(
   <AwesomeSlider>
-    <div data-src="/path/to/image-0.png" />
-    <div data-src="/path/to/image-1.png" />
-    <div data-src="/path/to/image-2.jpg" />
+    <div data-src="ST3_PagePNG__Page_001.png" />
   </AwesomeSlider>
-);
+  );
+};
+
+export default ImageGallery;
