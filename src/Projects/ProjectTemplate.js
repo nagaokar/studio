@@ -21,6 +21,8 @@ const projectTemplate = () => {
                 <div className="section-text"><PlaceholderText/></div>
 {/* ============================= PORFOLIO CAROUSEL =============================  */}
 
+
+
 {/* ============================= End of project details =============================  */}
             </div>
         </div>
