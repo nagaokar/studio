@@ -6,29 +6,24 @@ import './ProjectPage.css'
 const projectTemplate = () => {
     return(
         <div>
-        <img className="cover-image" src="https://via.placeholder.com/1920"></img>
-        <div className="cover-image-text">
-            <h1 className="project-title">Project Title</h1>
-            <h3>CPU.Ai Lab at the Manchester School of Architecture</h3>
-            <time>2020-21</time>
-        </div>
-        
-        <div class="detail-container">
-            <div class="section-heading">
-                <h3>About</h3>
+            <img className="cover-image" src="https://via.placeholder.com/1920"></img>
+            <div className="cover-image-text">
+                <h1 className="project-title">Project Title</h1>
+                <h3>CPU.Ai Lab at the Manchester School of Architecture</h3>
+                <time>2020-21</time>
             </div>
-            <div class="section-text">
-                <PlaceholderText/>
+            <div className="grid-container">
+{/* ============================= ABOUT =============================  */}
+                <div className="section-heading"><h3>Section Title</h3></div>
+                <div className="section-text"><PlaceholderText/></div>
+{/* ============================= SECTION TITLE =============================  */}
+                <div className="section-heading"><h3>Section Title</h3></div>
+                <div className="section-text"><PlaceholderText/></div>
+{/* ============================= PORFOLIO CAROUSEL =============================  */}
+
+{/* ============================= End of project details =============================  */}
             </div>
-            <div class="section-heading2"></div>
-            <div class="section-text2"></div>
         </div>
-        </div>
-
-
-
-
-        
     );
 }
 
