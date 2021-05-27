@@ -1,10 +1,52 @@
 import react from 'react'
-
+import Navigation from '../Components/Navigation'
+import PlaceholderText from '../Components/PlaceholderText'
+import './ProjectPage.css'
 
 const projectTemplate = () => {
     return(
-        <h1></h1>
+        <div>
+        <img className="cover-image" src="https://via.placeholder.com/1920"></img>
+        <div className="cover-image-text">
+            <h1 className="project-title">Project Title</h1>
+            <h3>CPU.Ai Lab at the Manchester School of Architecture</h3>
+            <time>2020-21</time>
+        </div>
+        
+        <div class="detail-container">
+            <div class="section-heading">
+                <h3>About</h3>
+            </div>
+            <div class="section-text">
+                <PlaceholderText/>
+            </div>
+            <div class="section-heading2"></div>
+            <div class="section-text2"></div>
+        </div>
+        </div>
+
+
+
+
+        
     );
 }
 
 export default projectTemplate; 
+
+{/* <div>
+<div className="cover-img-container">
+    <Navigation/>
+    <img className="cover-image" src="https://via.placeholder.com/1920"></img>
+    <div className="cover-image-text">
+        <h1 className="project-title">Project Title</h1>
+        <h3>CPU.Ai Lab at the Manchester School of Architecture</h3>
+        <time>2020-21</time>
+    </div>
+</div>
+<div className="project-details">
+    <div className="description">
+        <PlaceholderText/>
+    </div>
+</div>
+</div> */}

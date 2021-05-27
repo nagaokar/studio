@@ -8,6 +8,7 @@ import PlaceholderText from './Components/PlaceholderText';
 import Footer from './Components/Footer'
 import Navigation from './Components/Navigation';
 import _404page from './Components/_404page';
+import ProjectTemplate from './Projects/ProjectTemplate'
 
 import cityzenProtoypeImg from './Media/cityzenPrototype.png'
 import TokyoIzakaya from './Media/TokyoIzakaya_blurredPNG.png'
@@ -91,8 +92,8 @@ const Projects = () => (
 
 const Cityzen1 = () => (
   <Fragment>
-    <Navigation/>
-    <PDFviewer/>
+    <ProjectTemplate/>
+    {/* <PDFviewer/> NOTE: Works on LocalHost but not when deployed (gh-pages)*/}
   </Fragment>
   );
 
