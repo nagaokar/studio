@@ -7,8 +7,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2rem;
-    width: 70vw;
+    width:99vmax;
     height: auto;
 
 }
@@ -30,15 +29,27 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 2.5fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    row-gap: 3rem;
+    gap: 0px 0px;
     grid-template-areas:
-      ". ."
-      ". ."
-      ". .";
-      margin-top: 10rem;
-    }
+    "grid-left-col grid-top-center grid-right-col"
+    "grid-left-col grid-center-center grid-right-col"
+    "grid-left-col grid-bottom-center grid-right-col";
+  }
+  
+  .grid-top-center { grid-area: grid-top-center; }
+  
+  .grid-center-center {  grid-area: grid-center-center; }
+  
+  .grid-bottom-center { grid-area: grid-bottom-center; }
+  
+  .grid-left-col { grid-area: grid-left-col; }
+  
+  .grid-right-col { grid-area: grid-right-col; }
+
+  
+  
 
 .info-grid {
     display: grid;
@@ -49,7 +60,6 @@
       ". . ."
       ". . .";
       margin-right: 5rem;
-
 }
 
 /*=============== Project Details ============================================================ */
@@ -87,7 +97,7 @@
 
 /*=============== Blog ============================================================ */
 .blog-container {
-    margin-left: 5rem;
+    margin-left: 15rem;
     margin-right: 5rem;
 }
 

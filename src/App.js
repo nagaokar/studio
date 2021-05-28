@@ -8,7 +8,7 @@ import PlaceholderText from './Components/PlaceholderText';
 import Footer from './Components/Footer'
 import Navigation from './Components/Navigation';
 import _404page from './Components/_404page';
-import ProjectTemplate from './Projects/ProjectTemplate'
+import ProjectTemplate2 from './Projects/ProjectTemplate2'
 import Cityzen3Page from './Projects/Cityzen3Page'
 
 import cityzenProtoypeImg from './Media/cityzenPrototype.png'
@@ -68,7 +68,7 @@ const Projects = () => (
         <img className="project-img" src={cityzenProtoypeImg}/>
         <div className="overlay">
           <Link className="text-link-card" to="/cityzen1">Cityzen I</Link>
-          <p>MA Architecture // 2020-21</p>
+          <p className="text-card">MA Architecture 2020-21</p>
         </div>
       </div>
     {/*=============== Cityzen 2 ============================================================ */}
@@ -76,7 +76,7 @@ const Projects = () => (
           <img className="project-img" src="https://via.placeholder.com/450"/>
           <div className="overlay">
             <Link className="text-link-card" to="/cityzen3">Cityzen II</Link>
-            <p>MA Architecture // 2020-21</p>
+            <p className="text-card">MA Architecture 2020-21</p>
           </div>
         </div>
     {/*=============== Cityzen 3 ============================================================ */}
@@ -84,7 +84,7 @@ const Projects = () => (
           <img className="project-img" src="https://via.placeholder.com/450"/>
           <div className="overlay">
             <Link className="text-link-card" to="/cityzen3">Cityzen III</Link>
-            <p>MA Architecture // 2020-21</p>
+            <p className="text-card">MA Architecture 2020-21</p>
           </div>
         </div>
     </div>
@@ -93,7 +93,7 @@ const Projects = () => (
 
 const Cityzen1 = () => (
   <Fragment>
-    <ProjectTemplate/>
+    <ProjectTemplate2/>
     {/* <PDFviewer/> NOTE: Works on LocalHost but not when deployed (gh-pages)*/}
   </Fragment>
   );

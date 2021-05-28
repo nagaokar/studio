@@ -93,6 +93,16 @@ ul {
     text-align: center;
 }
 
+.text-card {
+    color: rgb(255,252,249);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+
 /* .text-link-card:hover{
     text-decoration: underline;
     text-decoration-color:rgb(255,252,249);
