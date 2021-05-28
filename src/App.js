@@ -9,6 +9,7 @@ import Footer from './Components/Footer'
 import Navigation from './Components/Navigation';
 import _404page from './Components/_404page';
 import ProjectTemplate from './Projects/ProjectTemplate'
+import Cityzen3Page from './Projects/Cityzen3Page'
 
 import cityzenProtoypeImg from './Media/cityzenPrototype.png'
 import TokyoIzakaya from './Media/TokyoIzakaya_blurredPNG.png'
@@ -61,7 +62,7 @@ const Projects = () => (
   <Fragment>
     <h1>Projects</h1>
     <Navigation/>
-    <div className="grid-container">
+    <div className="grid-container-projects">
     {/*=============== Cityzen 1 ============================================================ */}
       <div className="project-card">
         <img className="project-img" src={cityzenProtoypeImg}/>
@@ -106,7 +107,7 @@ const Cityzen2 = () => (
 
 const Cityzen3 = () => (
   <Fragment>
-    <div>Cityzen3</div>
+        <Cityzen3Page/>
   </Fragment>
   );
 

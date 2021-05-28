@@ -41,23 +41,9 @@ ul {
     text-align: center;
 }
 
-/*=============== Navigation ============================================================ */
-
-nav {
-    background: none;
-}
-
-
-.nav-bar {
-    width: 50%;
-    justify-content: center;
-    justify-content: center;
-    
-}
-
 /*=============== Projects ============================================================ */
 
-.grid-container {
+.grid-container-projects {
     display: flex;
     flex-wrap: wrap;
     padding-top: 4rem;

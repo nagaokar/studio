@@ -11,7 +11,7 @@ class projectTemplate extends Component {
         super();
         this.state = {
             coverImage, //just replace the IMG source in import
-            projectTitle: "Project Template", //replace with contextual info for your project
+            projectTitle: "Cityzen III", //replace with contextual info for your project
             secondLine: "A participatory planning game & website for developing zero-carbon future cities",
             date: "2020-21",
             organisation: "CPU.Ai || Manchester School of Architecture",
@@ -24,7 +24,6 @@ class projectTemplate extends Component {
         const { coverImage, projectTitle, secondLine, organisation, date, portfolioURL} = this.state;
         return(
             <div>
-                <Navigation/>
                 <img className="cover-image" src={coverImage}></img>
                 <div className="cover-image-text">
                     <h1 className="project-title">{projectTitle}</h1>
@@ -32,7 +31,6 @@ class projectTemplate extends Component {
                     <p>{organisation}</p>
                     <time>{date}</time>
                 </div>
-    {/* ============================= Start of CSS GRID =============================  */}
                 <div className="grid-container">
     {/* ============================= BASIC INFORMATION =============================  */}
                     <div className="section-heading">
@@ -66,12 +64,16 @@ class projectTemplate extends Component {
                     </div>
     {/* ============================= ABOUT =============================  */}
                     <div className="section-heading"><h3>About</h3></div>
-                    <div className="section-text"><PlaceholderText/></div>
-    {/* ============================= SECTION =============================  */}
-                      <div className="section-heading"><h3>Section</h3></div>
-                    <div className="section-text"> 
-                        <PlaceholderText/> 
-                    </div>
+                    <div className="section-text">
+                        <p>Cityzen III is the final showcase and culmination of the previous two chapters (Cityzen I and II).
+                            This portfolio contains the final design of the game, explaining the mechanics and rules of play
+                            through using a game tutorial.
+                            </p><p>
+                            Further, it shows how the game sits within a web-based participatory ecosystem. Both the Front-end 
+                            and backend applications are demonstrated shown with the game gallery, analytics, and feedback portals.
+                            </p><p>
+                            To read the document, please click 'view portfolio' below (you will be redirected to Issuu in a new tab)
+                        </p></div>
     {/* ============================= Portfolio =============================  */}
                     <div className="section-heading"><h3>Portfolio</h3></div>
                         <a className=" section-text portfolio-link"
@@ -81,34 +83,6 @@ class projectTemplate extends Component {
                            View Portfolio on Issuu</a>
     {/* ============================= End of project details =============================  */}
                 </div>
-    {/* ============================= End of CSS GRID =============================  */}
-
-    {/* ============================= Start of Blog =============================  */}
-                <div className="blog-container">
-                    <img className="blog-image" src={coverImage}></img>
-                    <div>
-                        <div className="blog-title"><h5>Paragraph Title</h5></div>
-                        <div className="blog-text"><PlaceholderText/></div>
-                    </div>
-                    <img className="blog-image" src={coverImage}></img>
-                    <img className="blog-image" src={coverImage}></img>
-      {/* ============================= Blog PhotoGrid =============================  */}
-                {/* <div className="blog-grid">
-                    <img className="blog-grid-photo" src="https://picsum.photos/500/500"></img>
-                    <img className="blog-grid-photo" src="https://picsum.photos/500/500"></img>
-                    <img className="blog-grid-photo" src="https://picsum.photos/500/500"></img>
-                    <img className="blog-grid-photo" src="https://picsum.photos/500/500"></img>
-                    <img className="blog-grid-photo" src="https://picsum.photos/500/500"></img>
-                    <img className="blog-grid-photo" src="https://picsum.photos/500/500"></img>
-                    <img className="blog-grid-photo" src="https://picsum.photos/500/500"></img>
-                    <img className="blog-grid-photo" src="https://picsum.photos/500/500"></img>
-                    <img className="blog-grid-photo" src="https://picsum.photos/500/500"></img>
-                </div> */}
-
-
-                </div>
-{/* ============================= End of Blog =============================  */}
-
             </div>
         );
     }
