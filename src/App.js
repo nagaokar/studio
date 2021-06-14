@@ -1,120 +1,106 @@
-import { Fragment, useState } from 'react';
-import { BrowserRouter as Router, Route, Link, Switch, useRouteMatch, useParams } from 'react-router-dom';
-import { Document, Page } from 'react-pdf'
-
-import './App.css';
-
-import PlaceholderText from './Components/PlaceholderText';
-import Footer from './Components/Footer'
+import react, { Fragment } from 'react'
+import './App.css'
+import { BrowserRouter as Router, Route, Link, Switch, useRouteMatch, useParams } from 'react-router-dom'
 import Navigation from './Components/Navigation';
-import _404page from './Components/_404page';
-import ProjectTemplate from './Projects/ProjectTemplate'
-import Cityzen3Page from './Projects/Cityzen3Page'
 
-import cityzenProtoypeImg from './Media/cityzenPrototype.png'
-import TokyoIzakaya from './Media/TokyoIzakaya_blurredPNG.png'
-import cityzen1Portfolio from './Media/cityzen1Portfolio.pdf'
-import PDFviewer from './Components/PDFviewer';
 
 export default function App() {
 
-  return (
+  return(
+
     <Router basename="/studio" style={{background:"none"}}>
-        <main>
-          <Switch>          
-            <Route path="/" exact component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/projects" component={Projects} />
+      <main>
+        <Switch>
+          <Route path="/" exact component={Home}/>
+          <Route path="/about" component={About}/>
+          <Route path="/projects" component={Projects}/>
 {/* ====================================================== Projects Links ========================================= */}
-              <Route path="/cityzen1" component={Cityzen1} />
-              <Route path="/cityzen2" component={Cityzen2} />
-              <Route path="/cityzen3" component={Cityzen3} />
+          {/* <Route path="/#1" component={Project1} />
+          <Route path="/#2" component={Project2} />
+          <Route path="/#2" component={Project3} /> */}
 {/* -=============================================== End of Projects Links ========================================= */}
-            <Route path="/contact" component={Contact} />
-            <Route render={_404page} />
-          </Switch>
-        </main>
+          {/* <Route render={_404page} /> */}
+        </Switch>
+      </main>
     </Router>
   );
+
 }
 
 const Home = () => (
   <Fragment>
-    <div className="home-bg" style={{backgroundImage:`url(${TokyoIzakaya})`}}>
-    <h1 className="intro-text">NAGAOKA STUDIO</h1>
     <Navigation/>
-      <div className="footer">
-        <Footer/>
+        <div className="content-container">
+        <div>
+          <h1 class=" greet-text cssanimation sequence fadeInBottom">Welcome</h1>
+          <h3 className="intro-text cssanimation sequence fadeInBottom">
+            I'm Reiji Nagaoka,<br></br>
+            an MA Architecture graduate <br></br>
+            specialising in computational design.
+          </h3>
+        </div>
+        <div className="home-logo">
+          {/* //TODO ADD PICTORIAL LOGO HERE */}
+        </div>
       </div>
-    </div>
   </Fragment>
-);
+)
 
 const About = () => (
   <Fragment>
-    <h1>About</h1>
-    <Navigation/>
-    <PlaceholderText/>
-  </Fragment>
-);
+          <Navigation/>
+          <div className="content-container">
+            <div className="about-text-container">
+            <h1 className="about-title">About</h1>
+            <h2 className="about-text"> 
+              I'm a Graduate of the CPU.ai Lab within<br></br>
+              the Manchester School of Architecture.<br></br>
+            </h2>
+            <h2 className="about-text"> 
+              I am currently based in Manchester, UK.<br></br>
+              If you would like my work, please do<br></br>
+              get in touch.<br></br>
+            </h2>
+            </div>
+            {/* =================================== Links  ================================= */}
+            {/* <div className="about-links">
+            <p>Here's what I get up to in my spare time:</p>
+              <ul className="about-list">
+                <li className="about-link-item"><a classname="about-link-item" href="#">Music production</a></li>
+                <li className="about-link-item"><a href="#">Painting</a></li>
+                <li className="about-link-item"><a href="#">Playlisting</a></li>
+              </ul>
+            </div> */}
+            </div>
+    </Fragment>
+)
 
 const Projects = () => (
   <Fragment>
-    <h1>Projects</h1>
-    <Navigation/>
-    <div className="grid-container-projects">
-    {/*=============== Cityzen 1 ============================================================ */}
-      <div className="project-card">
-        <img className="project-img" src={cityzenProtoypeImg}/>
-        <div className="overlay">
-          <Link className="text-link-card" to="/cityzen1">Cityzen I</Link>
-          <p>MA Architecture // 2020-21</p>
-        </div>
-      </div>
-    {/*=============== Cityzen 2 ============================================================ */}
-      <div className="project-card">
-          <img className="project-img" src="https://via.placeholder.com/450"/>
-          <div className="overlay">
-            <Link className="text-link-card" to="/cityzen3">Cityzen II</Link>
-            <p>MA Architecture // 2020-21</p>
+        <Navigation/>
+        <div className="content-container-projects">
+          <div className="projects-list">
+            
+            {/* =================================== Project1Name  ================================= */}
+            <div className="project-card">
+              <img className="project-image" src="https://via.placeholder.com/300"></img>
+              {/* <div className="project-title">Project1Name</div> */}
+            </div>
+
+
+
+
           </div>
-        </div>
-    {/*=============== Cityzen 3 ============================================================ */}
-    <div className="project-card">
-          <img className="project-img" src="https://via.placeholder.com/450"/>
-          <div className="overlay">
-            <Link className="text-link-card" to="/cityzen3">Cityzen III</Link>
-            <p>MA Architecture // 2020-21</p>
+          
+          
+          <div className="sidebar">
+            <p>Navigation:</p>
+            <p>Project1Name</p>
+            <p>Project #</p>
           </div>
+          
+
+
         </div>
-    </div>
-  </Fragment>
-);
-
-const Cityzen1 = () => (
-  <Fragment>
-    <ProjectTemplate/>
-    {/* <PDFviewer/> NOTE: Works on LocalHost but not when deployed (gh-pages)*/}
-  </Fragment>
-  );
-
-
-const Cityzen2 = () => (
-  <Fragment>
-    <div>Cityzen2</div>
-  </Fragment>
-  );
-
-const Cityzen3 = () => (
-  <Fragment>
-        <Cityzen3Page/>
-  </Fragment>
-  );
-
-
-const Contact = () => (
-  <Fragment>
-   <h1>Contact</h1>
-   <Navigation/>
-   </Fragment> 
-  );
+    </Fragment>
+)

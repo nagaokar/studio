@@ -1,127 +1,109 @@
-h1 {
-    padding-left: 0;
-    margin: auto;
-    width: 50%;
-    text-align: center;
+
+/* =================================== Home ================================= */
+
+.content-container {
+    margin: 4em;
+    display: grid; 
+    grid-template-columns: 2fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0% 10px; 
+    grid-template-areas: 
+      ". ."; 
+}
+
+/* =================================== Home -> Greeting ================================= */
+/* 
+.intro-greeting {
+    font-size: xxx-large;
+    font-weight: 600;
+}
+
+.fade-in-greet {
+    animation: fadeIn linear 1s;
+    -webkit-animation: fadeIn linear 1s;
+    -moz-animation: fadeIn linear 1s;
+    -o-animation: fadeIn linear 1s;
+    -ms-animation: fadeIn linear 1s;
+} */
+
+.greet-text {
+    font-size: 3.5em;
+    letter-spacing: -3px;
+    font-weight: 700;
+}
+
+.cssanimation, .cssanimation span {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.cssanimation span { display: inline-block }
+
+.fadeInBottom { animation-name: fadeInBottom }
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
+}
+
+/* =================================== Home -> Intro text  ================================= */
+
+.intro-text {
+    font-size: xxx-large;
+    font-weight: 200;
+    animation-delay: 0.8s;
+}
+
+/* =================================== About  ================================= */
+
+/* a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration:line-through;
 }
 
 ul {
-    color: rgb(255,252,249);
-    text-decoration: none;
-    text-decoration-color: rgb(255,252,249);
+    justify-content: left;
     display: flex;
     list-style: none;
-    justify-content: center;
+} */
+
+.about-title {
+    font-size: 3.5em;
+    letter-spacing: -3px;
+    font-weight: 700;
 }
 
-/*=============== Home ============================================================ */
+.about-text {
+    font-size: xx-large;
+    font-weight: 200;
 
-.content-container {
-    width: 80%;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
 }
 
-.home-bg {
-    background-size: cover;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100vh;
-    width: 100vw;
+/* =================================== Projects  ================================= */
+
+
+.content-container-projects {
+    margin: 4em;
+    display: grid; 
+    grid-template-columns: 1.5fr 0.25fr; 
+    grid-template-rows: 1fr; 
+    gap: 0% 10px; 
+    grid-template-areas: 
+      ". ."; 
 }
 
-.text-link {
-    color: rgb(255,252,249);
-    text-decoration:none;
-    text-decoration-color: rgb(255,252,249);
-    padding-left: 1rem;
-    padding-right: 1rem;
-    text-align: center;
-}
-
-/*=============== Projects ============================================================ */
-
-.grid-container-projects {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 4rem;
-    justify-content: center;
+.projects-list {
+    display:flexbox;
 }
 
 .project-card {
-    margin: 0.1rem;
     position: relative;
-    text-align:center;
-    margin-left: 0.2rem;
-    margin-right: 0.2rem;
-    color: rgb(255,252,249);
-}
-
-.project-card:hover .overlay {
-    opacity: 1;
-}
-
-.overlay {
-    position:absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity:0%;
-    transition:0.5s ease;
-    background-color: #352d39;
-}
-
-.project-img {
-    width: auto;
-    height: auto;
-}
-
-.text-link-card {
-    color: rgb(255,252,249);
-    font-size: xx-large;
-    text-decoration:none;
-    text-decoration-color: rgb(255,252,249);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-}
-
-/* .text-link-card:hover{
-    text-decoration: underline;
-    text-decoration-color:rgb(255,252,249);
-} */
-
-
-
-/* .project-img:hover {
-    filter: blur(70%);
-    opacity: 10%;
-} */
-
-.intro-text {
-    padding-left: 0;
-    font-size: 20ch;
-    margin: auto;
     width: 50%;
-    text-align: center;
-}
-
-/*=============== Portfolio PDFViewer ============================================================ */
-
-.portfolio-container {
-    width: 80%;
-    align-items: center;
-}
-
-/*=============== Footer ============================================================ */
-
-.footer {
-    text-align: center;
-}
+    max-width: 300px;
+  }
