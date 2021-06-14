@@ -4,6 +4,12 @@ import { BrowserRouter as Router, Route, Link, Switch, useRouteMatch, useParams 
 import Navigation from './Components/Navigation';
 
 
+import LinkedInLogo from './Images/LinkedInLogo@2x.png'
+import InstagramLogo from './Images/InstagramLogo@2x.png'
+import SoundcloudLogo from './Images/SoundcloudLogo@2x.png'
+import EmailLogo from './Images/EmailLogo@2x.png'
+
+
 export default function App() {
 
   return(
@@ -61,6 +67,11 @@ const About = () => (
               If you would like my work, please do<br></br>
               get in touch.<br></br>
             </h2>
+              <div className="contact-icons">
+              <a href="https://www.linkedin.com/in/reiji-n-5767b312a/" target="_blank" rel="noopener noreferrer"><img classname="social-icon"  src={LinkedInLogo}></img></a>
+              <a href="mailto:nagaoka.ra@gmail.com" target="_blank" rel="noopener noreferrer"><img classname="social-icon" src={EmailLogo}></img></a>
+
+              </div>
             </div>
             {/* =================================== Links  ================================= */}
             {/* <div className="about-links">
@@ -79,28 +90,29 @@ const Projects = () => (
   <Fragment>
         <Navigation/>
         <div className="content-container-projects">
+        {/* =================================== ProjectPageNavigation  ================================= */}
+        <div className="sidebar">
+            <div className="projects-text"><h1>Projects</h1></div>
+            <div className="projects-nav">
+              <p>Project1Name</p>
+              <p>Project #</p>
+            </div>
+          </div>
+          
           <div className="projects-list">
-            
             {/* =================================== Project1Name  ================================= */}
             <div className="project-card">
               <img className="project-image" src="https://via.placeholder.com/300"></img>
               {/* <div className="project-title">Project1Name</div> */}
             </div>
-
-
+            {/* =================================== Project2Name  ================================= */}
+            <div className="project-card">
+              <img className="project-image" src="https://via.placeholder.com/300"></img>
+              {/* <div className="project-title">Project2Name</div> */}
+            </div>
 
 
           </div>
-          
-          
-          <div className="sidebar">
-            <p>Navigation:</p>
-            <p>Project1Name</p>
-            <p>Project #</p>
-          </div>
-          
-
-
         </div>
     </Fragment>
 )

@@ -82,8 +82,12 @@ ul {
 .about-text {
     font-size: xx-large;
     font-weight: 200;
-
 }
+
+img {
+    margin-right: 1rem;
+}
+
 
 /* =================================== Projects  ================================= */
 
@@ -91,19 +95,26 @@ ul {
 .content-container-projects {
     margin: 4em;
     display: grid; 
-    grid-template-columns: 1.5fr 0.25fr; 
-    grid-template-rows: 1fr; 
+    grid-template-columns: 0.5fr 1fr; 
+    grid-template-rows: 1fr;
     gap: 0% 10px; 
     grid-template-areas: 
       ". ."; 
 }
 
+.projects-text {
+    font-size: xx-large;
+    font-weight: 200;
+}
+
+
 .projects-list {
-    display:flexbox;
+    display:flex;
 }
 
 .project-card {
     position: relative;
     width: 50%;
     max-width: 300px;
+    margin: 0.5rem;
   }
