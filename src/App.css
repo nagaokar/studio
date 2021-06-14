@@ -72,7 +72,9 @@ ul {
     display: flex;
     list-style: none;
 } */
-
+.p-subtitle {
+    font-weight: bold;
+}
 .hobbies-links {
     margin-top: 9rem;
 }
@@ -88,8 +90,13 @@ ul {
     font-weight: 200;
 }
 
-img {
+.social-icon {
     margin-right: 1rem;
+}
+
+.cv-link {
+    margin-top: 3rem;
+    
 }
 
 
