@@ -73,6 +73,10 @@ ul {
     list-style: none;
 } */
 
+.hobbies-links {
+    margin-top: 9rem;
+}
+
 .about-title {
     font-size: 3.5em;
     letter-spacing: -3px;

@@ -8,6 +8,7 @@ import LinkedInLogo from './Images/LinkedInLogo@2x.png'
 import InstagramLogo from './Images/InstagramLogo@2x.png'
 import SoundcloudLogo from './Images/SoundcloudLogo@2x.png'
 import EmailLogo from './Images/EmailLogo@2x.png'
+import GitHubLogo from './Images/GithubLogo@2x.png'
 
 
 export default function App() {
@@ -57,32 +58,69 @@ const About = () => (
           <Navigation/>
           <div className="content-container">
             <div className="about-text-container">
-            <h1 className="about-title">About</h1>
-            <h2 className="about-text"> 
-              I'm a Graduate of the CPU.ai Lab within<br></br>
-              the Manchester School of Architecture.<br></br>
-            </h2>
-            <h2 className="about-text"> 
-              I am currently based in Manchester, UK.<br></br>
-              If you would like my work, please do<br></br>
-              get in touch.<br></br>
-            </h2>
-              <div className="contact-icons">
-              <a href="https://www.linkedin.com/in/reiji-n-5767b312a/" target="_blank" rel="noopener noreferrer"><img classname="social-icon"  src={LinkedInLogo}></img></a>
-              <a href="mailto:nagaoka.ra@gmail.com" target="_blank" rel="noopener noreferrer"><img classname="social-icon" src={EmailLogo}></img></a>
+              <h1 className="about-title">About</h1>
+              <h2 className="about-text"> 
+                I'm a Graduate of the CPU.ai Lab within<br></br>
+                the Manchester School of Architecture.<br></br>
+              </h2>
+              <h2 className="about-text"> 
+                I am currently based in Manchester, UK.<br></br>
+                If you like my work, please do<br></br>
+                get in touch.<br></br>
+              </h2>
+                <div className="contact-icons">
+
+                  {/* LinkedIn ==================================*/}
+                <a href="https://www.linkedin.com/in/reiji-n-5767b312a/" 
+                  target="_blank" rel="noopener noreferrer">
+                    <img 
+                      classname="social-icon" src={LinkedInLogo}>
+                    </img>
+                </a>
+
+                  {/* Email ================================== */}
+                <a href="mailto:nagaoka.ra@gmail.com" 
+                  target="_blank" rel="noopener noreferrer">
+                    <img classname="social-icon" src={EmailLogo}>
+                    </img>
+                </a>
 
               </div>
             </div>
-            {/* =================================== Links  ================================= */}
-            {/* <div className="about-links">
+
+            {/* =================================== Hobbies  ================================= */}
+            <div className="hobbies-links">
             <p>Here's what I get up to in my spare time:</p>
-              <ul className="about-list">
-                <li className="about-link-item"><a classname="about-link-item" href="#">Music production</a></li>
-                <li className="about-link-item"><a href="#">Painting</a></li>
-                <li className="about-link-item"><a href="#">Playlisting</a></li>
-              </ul>
-            </div> */}
+
+              {/* Github: Nagaokar ================================== */}
+              <a href="https://github.com/nagaokar" 
+              target="_blank" rel="noopener noreferrer">
+                <img 
+                  className="social-icon" src={GitHubLogo}>
+                </img>
+              </a>
+
+              {/* Instagram: MASSLAND ================================== */}
+              <a href="https://www.instagram.com/massland/?hl=en" 
+              target="_blank" rel="noopener noreferrer">
+                <img 
+                  className="social-icon" src={InstagramLogo}>
+                </img>
+              </a>
+
+              {/* SoundCloud: MASSLAND ================================== */}
+              <a href="https://soundcloud.com/massland" 
+                target="_blank" rel="noopener noreferrer">
+                  <img 
+                    className="social-icon" src={SoundcloudLogo}>
+                  </img>
+              </a>
+
+
+
+
             </div>
+          </div>
     </Fragment>
 )
 

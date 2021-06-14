@@ -28,7 +28,7 @@
 }
 
 .text-link:hover {
-    text-decoration:line-through;
+    font-weight: 700;
 }
 
 @media only screen and (max-width: 600px) {
