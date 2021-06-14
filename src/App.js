@@ -40,7 +40,7 @@ const Home = () => (
     <Navigation/>
         <div className="content-container">
         <div>
-          <h1 class=" greet-text cssanimation sequence fadeInBottom">Welcome</h1>
+          <h1 class=" greet-title cssanimation sequence fadeInBottom">Welcome</h1>
           <h3 className="intro-text cssanimation sequence fadeInBottom">
             I'm Reiji Nagaoka,<br></br>
             an MA Architecture graduate <br></br>
@@ -137,7 +137,7 @@ const Projects = () => (
         <div className="content-container-projects">
         {/* =================================== ProjectPageNavigation  ================================= */}
         <div className="sidebar">
-            <div className="projects-text"><h1>Projects</h1></div>
+            <div className="projects-title"><h1>Projects</h1></div>
             <div className="projects-nav">
               <p>Project1Name</p>
               <p>Project #</p>

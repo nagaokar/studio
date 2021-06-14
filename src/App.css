@@ -26,7 +26,7 @@
     -ms-animation: fadeIn linear 1s;
 } */
 
-.greet-text {
+.greet-title {
     font-size: 3.5em;
     letter-spacing: -3px;
     font-weight: 700;
@@ -113,9 +113,10 @@ ul {
       ". ."; 
 }
 
-.projects-text {
-    font-size: xx-large;
-    font-weight: 200;
+.projects-title {
+    font-size: 1.75rem;
+    letter-spacing: -3px;
+    font-weight: 700;
 }
 
 
