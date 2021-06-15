@@ -149,41 +149,27 @@ const Projects = () => (
   <Fragment>
         <Navigation/>
         <div className="content-container-projects">
-          <div className="pageTitle">
-            <div className="projects-title cssanimation sequence fadeInBottom"><h1>Projects</h1></div>
-              <div className="about-text">
-                      <h2 className="about-text"> 
-                      {/* A participatory planning game<br></br>
-                      for the zero-carbon development of <br></br>
-                      the Northern Gateway, Manchester<br></br> */}
-                    </h2>
-              </div>
-        </div>
-        <div className="blank">
-        </div>
-        {/* ======================================= Project 1 ===================================== */}
-        <div className="proj1desc">
-          <h3 className="about-text"><b>Cityzen</b></h3>
-          <h2 className="about-text"> 
-                    A participatory planning game<br></br>
-                    for the zero-carbon development
-                    of the Northern Gateway, Manchester.
-          </h2>
-          <p>
-            MA Architecture 2020-2021
-          </p>
-          <h4><b>See More</b></h4>
-        </div>
         <div>
-          <img className="proj1 proj-img" src={gImg2}></img>
-        </div>
-        {/* ======================================= Project 1 ===================================== */}
-        <div className="proj2desc">
-          <p>Project1Desc</p>
-        </div>
-        <div>
-          <img className="proj2 proj-img" src={gImg2}></img>
-        </div>
+          <div className="projects-title cssanimation sequence fadeInBottom">
+            <h1>Projects</h1>
+          </div>
+
+        <h2 className="about-text"> 
+            A participatory planning game<br></br>
+            for the zero-carbon development of <br></br>
+            the Northern Gateway, Manchester<br></br>
+            </h2>
+          </div>
+          <hr style={{marginBottom:"5rem", marginTop:"2.5rem"}}></hr>
+          <div className="projects-list">
+            <img className="proj-img" src="https://via.placeholder.com/400"></img>
+            <img className="proj-img" src="https://via.placeholder.com/400"></img>
+            <img className="proj-img" src="https://via.placeholder.com/400"></img>
+            <img className="proj-img" src="https://via.placeholder.com/400"></img>
+            
+
+
+          </div>
         </div>
     </Fragment>
 )

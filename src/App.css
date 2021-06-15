@@ -113,49 +113,20 @@ ul {
 
 
 .content-container-projects {
-    margin: 4em;
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    grid-template-rows: repeat(0.5fr 1fr 1fr 1fr 1fr 1fr);
-    gap: 10px 30px; 
-    grid-auto-flow: row;
-    grid-template-areas:
-      "pageTitle blank"
-      "proj1desc proj1"
-      "proj2desc proj2"
-      "proj3desc proj3"
-      "footer footer";
+    margin:4rem;
+    display: flexbox;
   }
   
-  .header { grid-area: header; }
-  
-  .pageTitle { grid-area: pageTitle; }
-  
-  .proj2 { grid-area: proj2; }
-  
-  .proj3 { grid-area: proj3; }
-  
-  .proj1 { grid-area: proj1; }
-  
-  .proj1desc { grid-area: proj1desc; }
-  
-  .proj2desc { grid-area: proj2desc; }
-  
-  .proj3desc { grid-area: proj3desc; }
-  
-  .footer { grid-area: footer; }
-  
-
 .projects-title {
+    margin-top: 7.1rem;
     font-size: 1.75rem;
     letter-spacing: -3px;
     font-weight: 700;
 }
 
-
 .projects-list {
     display: flex;
-    margin-top: 9rem;
+    justify-content: center;
 }
 
 /* .project-card {
@@ -172,10 +143,9 @@ ul {
 /* =================================== Individual Project Pages  ================================= */
 
 .proj-img {
-    max-width: 100%;
-    margin-bottom: 1rem;
-    border-style: solid;
-    border-width: 1px;
+    max-width: 40%;
+    margin: 0.5rem;
+
 }
 
 .photo-container {
