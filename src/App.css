@@ -150,8 +150,13 @@ ul {
 .proj-img {
     max-width: 100%;
     margin-bottom: 1rem;
+    border-style: solid;
+    border-width: 1px;
 }
 
 .photo-container {
     margin-top: 10rem;
+    padding-left: 0rem;
 }
+
+

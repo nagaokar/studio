@@ -2,6 +2,7 @@ import react, { Fragment } from 'react'
 import { BrowserRouter as Router, Route, Link, Switch, useRouteMatch, useParams } from 'react-router-dom'
 import Navigation from './Components/Navigation';
 import Cityzen3 from './Components/Cityzen3';
+import ProjectPage from './Components/ProjectPage'
 
 import './App.css'
 
