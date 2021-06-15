@@ -54,11 +54,14 @@ const Home = () => (
     <Navigation/>
         <div className="content-container">
         <div>
-          <h1 class=" greet-title cssanimation sequence fadeInBottom">Welcome</h1>
+          <h1 class=" greet-title cssanimation sequence fadeInBottom">Hi,</h1>
           <h3 className="intro-text cssanimation sequence fadeInBottom">
             I'm Reiji Nagaoka,<br></br>
             an MA Architecture graduate <br></br>
             specialising in computational design.
+          </h3>
+          <h3 className="intro-text2 cssanimation sequence fadeInBottom">
+            Welcome to my website.
           </h3>
         </div>
         <div className="home-logo">
@@ -80,8 +83,7 @@ const About = () => (
               </h2>
               <h2 className="about-text"> 
                 I am currently based in Manchester, UK.<br></br>
-                If you like my work, please do<br></br>
-                get in touch.<br></br>
+                If you like my work, please get in touch.<br></br>
               </h2>
                 <div className="contact-icons">
 
@@ -149,16 +151,17 @@ const Projects = () => (
   <Fragment>
         <Navigation/>
         <div className="content-container-projects">
-        <div>
           <div className="projects-title cssanimation sequence fadeInBottom">
             <h1>Projects</h1>
           </div>
-
-        <h2 className="about-text"> 
-            A participatory planning game<br></br>
-            for the zero-carbon development of <br></br>
-            the Northern Gateway, Manchester<br></br>
-            </h2>
+          <div className="title-bar" style={{display:"inline-flex"}}>
+            <div>
+            <h2 className="about-text"> 
+                A participatory planning game<br></br>
+                for the zero-carbon development of <br></br>
+                the Northern Gateway, Manchester<br></br>
+                </h2>
+              </div>
           </div>
           <hr style={{marginBottom:"5rem", marginTop:"2.5rem"}}></hr>
           <div className="projects-list">
@@ -166,29 +169,10 @@ const Projects = () => (
             <img className="proj-img" src="https://via.placeholder.com/400"></img>
             <img className="proj-img" src="https://via.placeholder.com/400"></img>
             <img className="proj-img" src="https://via.placeholder.com/400"></img>
-            
-
-
           </div>
-        </div>
+      </div>
     </Fragment>
 )
-
-
-// const Projects = () => (
-//   <Fragment>
-//         <Navigation/>
-//         <div className="content-container-projects">
-//         <div className="projects-title cssanimation sequence fadeInBottom"><h1>Projects</h1>
-//         </div>
-//         <div className="projects-nav">
-//       <p>Project1Name</p>
-//       <p>Project #</p>
-//     </div>
-
-//         </div>
-//     </Fragment>
-// )
 
 // ================================================================= Cityzen 3 ========================================
 

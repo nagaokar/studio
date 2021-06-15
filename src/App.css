@@ -65,6 +65,12 @@ a:hover {
     animation-delay: 0.8s;
 }
 
+.intro-text2 {
+    font-size: xxx-large;
+    font-weight: 200;
+    animation-delay: 3.8s;
+}
+
 /* =================================== About  ================================= */
 
 /* a {
@@ -114,7 +120,6 @@ ul {
 
 .content-container-projects {
     margin:4rem;
-    display: flexbox;
   }
   
 .projects-title {
@@ -125,32 +130,20 @@ ul {
 }
 
 .projects-list {
-    display: flex;
+    display:flexbox;
     justify-content: center;
+
 }
-
-/* .project-card {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: 0.5rem;
-  } */
-
-.project-card {
-    margin:0.25rem;
-}
-
-/* =================================== Individual Project Pages  ================================= */
 
 .proj-img {
-    max-width: 40%;
     margin: 0.5rem;
-
 }
 
 .photo-container {
     margin-top: 10rem;
     padding-left: 0rem;
 }
+
+/* =================================== Individual Project Pages  ================================= */
 
 
