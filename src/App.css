@@ -11,6 +11,15 @@
       ". ."; 
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    font-weight: 700;
+}
+
 /* =================================== Home -> Greeting ================================= */
 /* 
 .intro-greeting {
@@ -100,15 +109,15 @@ ul {
 }
 
 
-/* =================================== Projects  ================================= */
+/* =================================== Projects Page  ================================= */
 
 
 .content-container-projects {
     margin: 4em;
     display: grid; 
-    grid-template-columns: 0.5fr 1fr; 
+    grid-template-columns: 0.25fr 1fr; 
     grid-template-rows: 1fr;
-    gap: 0% 10px; 
+    gap: 0% 5%; 
     grid-template-areas: 
       ". ."; 
 }
@@ -121,12 +130,23 @@ ul {
 
 
 .projects-list {
-    display:flex;
+    display: flex;
+    margin-top: 9rem;
 }
 
-.project-card {
+/* .project-card {
     position: relative;
-    width: 50%;
-    max-width: 300px;
+    width: 100%;
+    max-width: 600px;
     margin: 0.5rem;
-  }
+  } */
+
+.project-card {
+    margin:0.25rem;
+}
+
+/* =================================== Individual Project Pages  ================================= */
+
+.back-link:hover {
+    font-weight: 700;
+}

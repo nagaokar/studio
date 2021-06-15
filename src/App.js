@@ -1,7 +1,8 @@
 import react, { Fragment } from 'react'
-import './App.css'
 import { BrowserRouter as Router, Route, Link, Switch, useRouteMatch, useParams } from 'react-router-dom'
 import Navigation from './Components/Navigation';
+
+import './App.css'
 
 
 import LinkedInLogo from './Images/LinkedInLogo@2x.png'
@@ -23,8 +24,8 @@ export default function App() {
           <Route path="/about" component={About}/>
           <Route path="/projects" component={Projects}/>
 {/* ====================================================== Projects Links ========================================= */}
-          {/* <Route path="/#1" component={Project1} />
-          <Route path="/#2" component={Project2} />
+          <Route path="/Cityzen3" component={Cityzen3} />
+          {/* <Route path="/#2" component={Project2} />
           <Route path="/#2" component={Project3} /> */}
 {/* -=============================================== End of Projects Links ========================================= */}
           {/* <Route render={_404page} /> */}
@@ -32,7 +33,6 @@ export default function App() {
       </main>
     </Router>
   );
-
 }
 
 const Home = () => (
@@ -59,7 +59,7 @@ const About = () => (
           <Navigation/>
           <div className="content-container">
             <div className="about-text-container">
-              <h1 className="about-title">About</h1>
+              <h1 className="about-title cssanimation sequence fadeInBottom">About</h1>
               <h2 className="about-text"> 
                 I'm a Graduate of the CPU.ai Lab within<br></br>
                 the Manchester School of Architecture.<br></br>
@@ -137,7 +137,7 @@ const Projects = () => (
         <div className="content-container-projects">
         {/* =================================== ProjectPageNavigation  ================================= */}
         <div className="sidebar">
-            <div className="projects-title"><h1>Projects</h1></div>
+            <div className="projects-title cssanimation sequence fadeInBottom"><h1>Projects</h1></div>
             <div className="projects-nav">
               <p>Project1Name</p>
               <p>Project #</p>
@@ -147,17 +147,29 @@ const Projects = () => (
           <div className="projects-list">
             {/* =================================== Project1Name  ================================= */}
             <div className="project-card">
-              <img className="project-image" src="https://via.placeholder.com/300"></img>
-              {/* <div className="project-title">Project1Name</div> */}
+              <a href="/Cityzen3"><img className="project-image" src="https://via.placeholder.com/900x450"></img></a>
             </div>
-            {/* =================================== Project2Name  ================================= */}
-            <div className="project-card">
-              <img className="project-image" src="https://via.placeholder.com/300"></img>
-              {/* <div className="project-title">Project2Name</div> */}
-            </div>
-
-
           </div>
         </div>
     </Fragment>
+)
+
+// ================================================================= Cityzen 3 ========================================
+
+const Cityzen3 = () => (
+  <Fragment>
+    <Navigation/>
+    <div className="content-container">
+      <div className="project-desc-container">      
+        <h1 className="about-title cssanimation sequence fadeInBottom">Cityzen 3</h1>
+        <h2 className="about-text"> 
+                A participatory planning game<br></br>
+                for zero-carbon development of <br></br>
+                the Northern Gateway, Manchester<br></br>
+              </h2>
+        <a  href="/projects">Back to projects</a>
+      </div>
+
+    </div>
+  </Fragment>
 )
