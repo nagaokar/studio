@@ -115,7 +115,7 @@ ul {
 .content-container-projects {
     margin: 4em;
     display: grid; 
-    grid-template-columns: 0.25fr 1fr; 
+    grid-template-columns: 0.5fr 1fr; 
     grid-template-rows: 1fr;
     gap: 0% 5%; 
     grid-template-areas: 
@@ -147,6 +147,11 @@ ul {
 
 /* =================================== Individual Project Pages  ================================= */
 
-.back-link:hover {
-    font-weight: 700;
+.proj-img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+.photo-container {
+    margin-top: 10rem;
 }

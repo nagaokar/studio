@@ -1,6 +1,7 @@
 import react, { Fragment } from 'react'
 import { BrowserRouter as Router, Route, Link, Switch, useRouteMatch, useParams } from 'react-router-dom'
 import Navigation from './Components/Navigation';
+import Cityzen3 from './Components/Cityzen3';
 
 import './App.css'
 
@@ -11,6 +12,7 @@ import SoundcloudLogo from './Images/SoundcloudLogo@2x.png'
 import EmailLogo from './Images/EmailLogo@2x.png'
 import GitHubLogo from './Images/GithubLogo@2x.png'
 import CVLogo from './Images/CVLogo@2x.png'
+import IssuuLogo from './Images/IssuuLogo@2x.png'
 
 
 export default function App() {
@@ -74,14 +76,14 @@ const About = () => (
                   {/* LinkedIn ==================================*/}
                 <a href="https://www.linkedin.com/in/reiji-n-5767b312a/" 
                   target="_blank" rel="noopener noreferrer">
-                    <img classname="social-icon" src={LinkedInLogo} style={{marginRight:"1rem"}}>
+                    <img className="social-icon" src={LinkedInLogo}>
                     </img>
                 </a>
 
-                  {/* Email ================================== FOr some reason CSS marginRight doesn't work*/}
+                  {/* Email ==================================*/}
                 <a href="mailto:nagaoka.ra@gmail.com" 
                   target="_blank" rel="noopener noreferrer">
-                    <img classname="social-icon" src={EmailLogo} style={{marginRight:"1rem"}}>
+                    <img className="social-icon" src={EmailLogo}>
                     </img>
                 </a>
 
@@ -156,20 +158,8 @@ const Projects = () => (
 
 // ================================================================= Cityzen 3 ========================================
 
-const Cityzen3 = () => (
+const Project1 = () => (
   <Fragment>
-    <Navigation/>
-    <div className="content-container">
-      <div className="project-desc-container">      
-        <h1 className="about-title cssanimation sequence fadeInBottom">Cityzen 3</h1>
-        <h2 className="about-text"> 
-                A participatory planning game<br></br>
-                for zero-carbon development of <br></br>
-                the Northern Gateway, Manchester<br></br>
-              </h2>
-        <a  href="/projects">Back to projects</a>
-      </div>
-
-    </div>
+    <Cityzen3/>
   </Fragment>
 )
