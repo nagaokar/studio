@@ -16,6 +16,17 @@ import CVLogo from './Images/CVLogo@2x.png'
 import IssuuLogo from './Images/IssuuLogo@2x.png'
 
 
+import TitlePg from './Images/Cityzen3/C3_pg1.png'
+import DevPg from './Images/Cityzen3/C3_devRole.png'
+import EnvPg from './Images/Cityzen3/C3_envRole.png'
+import EntPg from './Images/Cityzen3/C3_entRole.png'
+import gImg1 from './Images/Cityzen3/C3_game1.png'
+import gImg2 from './Images/Cityzen3/C3_game2.png'
+import gImg3 from './Images/Cityzen3/C3_game3.png'
+import gGallery from './Images/Cityzen3/C3_gallery.png'
+import gGraphs from './Images/Cityzen3/C3_graphs.png'
+
+
 export default function App() {
 
   return(
@@ -138,24 +149,60 @@ const Projects = () => (
   <Fragment>
         <Navigation/>
         <div className="content-container-projects">
-        {/* =================================== ProjectPageNavigation  ================================= */}
-        <div className="sidebar">
+          <div className="pageTitle">
             <div className="projects-title cssanimation sequence fadeInBottom"><h1>Projects</h1></div>
-            <div className="projects-nav">
-              <p>Project1Name</p>
-              <p>Project #</p>
-            </div>
-          </div>
-          
-          <div className="projects-list">
-            {/* =================================== Project1Name  ================================= */}
-            <div className="project-card">
-              <a href="/Cityzen3"><img className="project-image" src="https://via.placeholder.com/900x450"></img></a>
-            </div>
-          </div>
+              <div className="about-text">
+                      <h2 className="about-text"> 
+                      {/* A participatory planning game<br></br>
+                      for the zero-carbon development of <br></br>
+                      the Northern Gateway, Manchester<br></br> */}
+                    </h2>
+              </div>
+        </div>
+        <div className="blank">
+        </div>
+        {/* ======================================= Project 1 ===================================== */}
+        <div className="proj1desc">
+          <h3 className="about-text"><b>Cityzen</b></h3>
+          <h2 className="about-text"> 
+                    A participatory planning game<br></br>
+                    for the zero-carbon development
+                    of the Northern Gateway, Manchester.
+          </h2>
+          <p>
+            MA Architecture 2020-2021
+          </p>
+          <h4><b>See More</b></h4>
+        </div>
+        <div>
+          <img className="proj1 proj-img" src={gImg2}></img>
+        </div>
+        {/* ======================================= Project 1 ===================================== */}
+        <div className="proj2desc">
+          <p>Project1Desc</p>
+        </div>
+        <div>
+          <img className="proj2 proj-img" src={gImg2}></img>
+        </div>
         </div>
     </Fragment>
 )
+
+
+// const Projects = () => (
+//   <Fragment>
+//         <Navigation/>
+//         <div className="content-container-projects">
+//         <div className="projects-title cssanimation sequence fadeInBottom"><h1>Projects</h1>
+//         </div>
+//         <div className="projects-nav">
+//       <p>Project1Name</p>
+//       <p>Project #</p>
+//     </div>
+
+//         </div>
+//     </Fragment>
+// )
 
 // ================================================================= Cityzen 3 ========================================
 
@@ -164,3 +211,20 @@ const Project1 = () => (
     <Cityzen3/>
   </Fragment>
 )
+
+{/* =================================== ProjectPageNavigation  ================================= */}
+{/* <div className="sidebar">
+    <div className="projects-title cssanimation sequence fadeInBottom"><h1>Projects</h1></div>
+    <div className="projects-nav">
+      <p>Project1Name</p>
+      <p>Project #</p>
+    </div>
+  </div>
+  
+  <div className="projects-list">
+    {/* =================================== Project1Name  ================================= */}
+//     <div className="project-card">
+//       <a href="/Cityzen3"><img className="project-image" src="https://via.placeholder.com/900x450"></img></a>
+//     </div>
+//   </div>
+// </div> */}

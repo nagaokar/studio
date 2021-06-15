@@ -114,13 +114,37 @@ ul {
 
 .content-container-projects {
     margin: 4em;
-    display: grid; 
-    grid-template-columns: 0.5fr 1fr; 
-    grid-template-rows: 1fr;
-    gap: 0% 5%; 
-    grid-template-areas: 
-      ". ."; 
-}
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: repeat(0.5fr 1fr 1fr 1fr 1fr 1fr);
+    gap: 10px 30px; 
+    grid-auto-flow: row;
+    grid-template-areas:
+      "pageTitle blank"
+      "proj1desc proj1"
+      "proj2desc proj2"
+      "proj3desc proj3"
+      "footer footer";
+  }
+  
+  .header { grid-area: header; }
+  
+  .pageTitle { grid-area: pageTitle; }
+  
+  .proj2 { grid-area: proj2; }
+  
+  .proj3 { grid-area: proj3; }
+  
+  .proj1 { grid-area: proj1; }
+  
+  .proj1desc { grid-area: proj1desc; }
+  
+  .proj2desc { grid-area: proj2desc; }
+  
+  .proj3desc { grid-area: proj3desc; }
+  
+  .footer { grid-area: footer; }
+  
 
 .projects-title {
     font-size: 1.75rem;

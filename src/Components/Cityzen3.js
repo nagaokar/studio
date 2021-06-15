@@ -54,7 +54,7 @@ const Cityzen3 = () => {
                   The Cityzen Hub acts as an interactive data platform which records and stores all previous
                   games in a database.</p>
                   <p>
-                  .
+                  
                   </p>
                   <p>
                   Players must simultaneously cooperate and compete with another to acheive group and
