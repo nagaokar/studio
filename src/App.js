@@ -158,11 +158,11 @@ const Projects = () => (
           <hr style={{marginBottom:"1em", marginTop:"2.5rem"}}></hr>
           <div className="projects-wrapper">
             <div className="projects-list"> 
-              <a href="/cityzen"><img className="proj-img" src={CityzenCover}></img></a> 
-              <img className="proj-img" src="https://via.placeholder.com/400"></img>
-              <img className="proj-img" src="https://via.placeholder.com/400"></img>
-              <img className="proj-img" src="https://via.placeholder.com/400"></img>
-              <img className="proj-img" src="https://via.placeholder.com/400"></img>
+              <a href="/cityzen"><img className="cover-img" src={CityzenCover}></img></a> 
+              <img className="cover-img" src="https://via.placeholder.com/400"></img>
+              <img className="cover-img" src="https://via.placeholder.com/400"></img>
+              <img className="cover-img" src="https://via.placeholder.com/400"></img>
+              <img className="cover-img" src="https://via.placeholder.com/400"></img>
 
             </div>
           </div>

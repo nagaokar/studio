@@ -139,7 +139,7 @@ ul {
 
 }
 
-.proj-img {
+.cover-img {
     margin: 0.5rem;
     max-width: 400px;
 }
@@ -151,4 +151,29 @@ ul {
 
 /* =================================== Individual Project Pages  ================================= */
 
+.proj-img {
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.desc-text {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+    text-justify:inherit;
+    justify-items: center;
+    justify-self: center;
+
+}
+
+.sidebar {
+    margin-top: 9rem;
+    display:flexbox;
+    justify-content: right;
+}
+
+.sd-text {
+    opacity: 50%
+} 
 
