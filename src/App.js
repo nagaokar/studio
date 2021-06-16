@@ -31,7 +31,7 @@ export default function App() {
           <Route path="/about" component={About}/>
           <Route path="/projects" component={Projects}/>
 {/* ====================================================== Projects Links ========================================= */}
-          <Route path="/Cityzen" component={CityzenPage} />
+          <Route path="/studio/Cityzen" component={CityzenPage} />
           {/* <Route path="/#2" component={Project2} />
           <Route path="/#2" component={Project3} /> */}
 {/* -=============================================== End of Projects Links ========================================= */}
@@ -159,7 +159,7 @@ const Projects = () => (
           <hr style={{marginBottom:"1em", marginTop:"2.5rem"}}></hr>
           <div className="projects-wrapper">
             <div className="projects-list"> 
-              <a href="/cityzen"><img className="cover-img" src={CityzenCover}></img></a> 
+              <a href="/studio/cityzen"><img className="cover-img" src={CityzenCover}></img></a> 
               <img className="cover-img" src="https://via.placeholder.com/400"></img>
               <img className="cover-img" src="https://via.placeholder.com/400"></img>
               <img className="cover-img" src="https://via.placeholder.com/400"></img>
