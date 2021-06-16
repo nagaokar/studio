@@ -2,6 +2,7 @@ import react, { Fragment } from 'react'
 import { BrowserRouter as Router, Route, Link, Switch, useRouteMatch, useParams } from 'react-router-dom'
 import Navigation from './Components/Navigation';
 // import Cityzen3 from './Components/Cityzen3';
+import Cityzen from './Components/ProjectPages/Cityzen'
 
 import './App.css'
 
@@ -14,8 +15,9 @@ import GitHubLogo from './Images/Icons/GithubLogo@2x.png'
 import CVLogo from './Images/Icons/CVLogo@2x.png'
 import IssuuLogo from './Images/Icons/IssuuLogo@2x.png'
 
-// Projects Cover Images ======================================
-import CityzenCover from './Images/CoverImages/CityzenCover2-02.png'
+// Projects Cover Photos ======================================
+import CityzenCover from './Images/CoverImages/CityzenCover.png'
+
 
 export default function App() {
 
@@ -28,7 +30,7 @@ export default function App() {
           <Route path="/about" component={About}/>
           <Route path="/projects" component={Projects}/>
 {/* ====================================================== Projects Links ========================================= */}
-          <Route path="/Cityzen3" component={Cityzen3} />
+          <Route path="/Cityzen" component={CityzenPage} />
           {/* <Route path="/#2" component={Project2} />
           <Route path="/#2" component={Project3} /> */}
 {/* -=============================================== End of Projects Links ========================================= */}
@@ -144,31 +146,35 @@ const Projects = () => (
           <div className="projects-title cssanimation sequence fadeInBottom">
             <h1>Projects</h1>
           </div>
-          <div className="title-bar" style={{display:"inline-flex"}}>
+          {/* <div className="title-bar" style={{display:"inline-flex"}}>
             <div>
-            <h2 className="about-text"> 
+            <h2 className="about-text" style={{marginTop:"-1rem"}}> 
                 A participatory planning game<br></br>
                 for the zero-carbon development of <br></br>
                 the Northern Gateway, Manchester<br></br>
-                </h2>
-              </div>
-          </div>
-          <hr style={{marginBottom:"5rem", marginTop:"2.5rem"}}></hr>
-          <div className="projects-list">
-            <img className="proj-img" src="https://via.placeholder.com/400"></img>
-            <img className="proj-img" src="https://via.placeholder.com/400"></img>
-            <img className="proj-img" src="https://via.placeholder.com/400"></img>
-            <img className="proj-img" src="https://via.placeholder.com/400"></img>
+            </h2>
+            </div>
+          </div> */}
+          <hr style={{marginBottom:"1em", marginTop:"2.5rem"}}></hr>
+          <div className="projects-wrapper">
+            <div className="projects-list"> 
+              <a href="/cityzen"><img className="proj-img" src={CityzenCover}></img></a> 
+              <img className="proj-img" src="https://via.placeholder.com/400"></img>
+              <img className="proj-img" src="https://via.placeholder.com/400"></img>
+              <img className="proj-img" src="https://via.placeholder.com/400"></img>
+              <img className="proj-img" src="https://via.placeholder.com/400"></img>
+
+            </div>
           </div>
       </div>
     </Fragment>
 )
 
 // ================================================================= Cityzen 3 ========================================
-
-const Cityzen3 = () => (
+const CityzenPage = () => (
   <Fragment>
-    <Cityzen3/>
+    <Navigation/>
+    <Cityzen/>
   </Fragment>
 )
 

@@ -129,14 +129,19 @@ ul {
     font-weight: 700;
 }
 
+.projects-wrapper {
+    overflow-x: scroll;
+
+}
+
 .projects-list {
-    display:flexbox;
-    justify-content: center;
+    display:flex;
 
 }
 
 .proj-img {
     margin: 0.5rem;
+    max-width: 400px;
 }
 
 .photo-container {
