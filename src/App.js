@@ -31,7 +31,7 @@ export default function App() {
           <Route path="/about" component={About}/>
           <Route path="/projects" component={Projects}/>
 {/* ====================================================== Projects Links ========================================= */}
-          <Route path="/studio/Cityzen" component={CityzenPage} />
+          <Route path="/cityzen" component={CityzenPage} />
           {/* <Route path="/#2" component={Project2} />
           <Route path="/#2" component={Project3} /> */}
 {/* -=============================================== End of Projects Links ========================================= */}
