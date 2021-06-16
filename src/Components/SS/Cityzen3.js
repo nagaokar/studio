@@ -4,17 +4,25 @@ import Carousel from './Carousel'
 
 import '../App.css'
 
-import TitlePg from '../Images/Cityzen3/C3_pg1.png'
-import DevPg from '../Images/Cityzen3/C3_devRole.png'
-import EnvPg from '../Images/Cityzen3/C3_envRole.png'
-import EntPg from '../Images/Cityzen3/C3_entRole.png'
-import gImg1 from '../Images/Cityzen3/C3_game1.png'
-import gImg2 from '../Images/Cityzen3/C3_game2.png'
-import gImg3 from '../Images/Cityzen3/C3_game3.png'
-import gGallery from '../Images/Cityzen3/C3_gallery.png'
-import gGraphs from '../Images/Cityzen3/C3_graphs.png'
+// Social Media Icons ======================================
+import LinkedInLogo from './Images/Icons/LinkedInLogo@2x.png'
+import InstagramLogo from './Images/Icons/InstagramLogo@2x.png'
+import SoundcloudLogo from './Images/Icons/SoundcloudLogo@2x.png'
+import EmailLogo from './Images/Icons/EmailLogo@2x.png'
+import GitHubLogo from './Images/Icons/GithubLogo@2x.png'
+import CVLogo from './Images/Icons/CVLogo@2x.png'
+import IssuuLogo from './Images/Icons/IssuuLogo@2x.png'
 
-import IssuuLogo from '../Images/IssuuLogo@2x.png'
+import TitlePg from './Images/Cityzen3/C3_pg1.png'
+import DevPg from './Images/Cityzen3/C3_devRole.png'
+import EnvPg from './Images/Cityzen3/C3_envRole.png'
+import EntPg from './Images/Cityzen3/C3_entRole.png'
+import gImg1 from './Images/Cityzen3/C3_game1.png'
+import gImg2 from './Images/Cityzen3/C3_game2.png'
+import gImg3 from './Images/Cityzen3/C3_game3.png'
+import gGallery from './Images/Cityzen3/C3_gallery.png'
+import gGraphs from './Images/Cityzen3/C3_graphs.png'
+
 
 
 const Cityzen3 = () => {
@@ -82,8 +90,8 @@ const Cityzen3 = () => {
             </div>
           </div>
           <div className="photo-container">
-          <img className="proj-img" src={gImg2}></img>
-          <img className="proj-img" src={gGallery}></img>
+          <img className="proj-img" src="#"></img>
+          <img className="proj-img" src="#"></img>
           </div>
         </div>
     </>
@@ -91,18 +99,3 @@ const Cityzen3 = () => {
 }
 
 export default Cityzen3;
-
-            {/* <img className="proj-img" src={TitlePg}></img>
-            <img className="proj-img" src={DevPg}></img>
-            <img className="proj-img" src={EnvPg}></img>
-            <img className="proj-img" src={EntPg}></img>
-            <img className="proj-img" src={gImg1}></img>
-            <img className="proj-img" src={gImg2}></img>
-            <img className="proj-img" src={gImg3}></img>
-            <img className="proj-img" src={gGallery}></img>
-            <img className="proj-img" src={gGraphs}></img> */}
-
-        //     <a href="https://issuu.com/nagaokastudio/docs/studio_three_25_05_21"
-        //     target="_blank" rel="noopener noreferrer" >
-        //   <img className="social-icon" src={IssuuLogo} style={{marginBottom:"0.25rem"}}></img>
-        // </a
