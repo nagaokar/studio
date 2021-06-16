@@ -1,6 +1,7 @@
 import react, { Fragment } from 'react'
 import { BrowserRouter as Router, Route, Link, Switch, useRouteMatch, useParams } from 'react-router-dom'
 import Navigation from './Components/Navigation';
+import ScrollToTop from './Components/ScrollToTop';
 // import Cityzen3 from './Components/Cityzen3';
 import Cityzen from './Components/ProjectPages/Cityzen'
 
@@ -175,6 +176,7 @@ const CityzenPage = () => (
   <Fragment>
     <Navigation/>
     <Cityzen/>
+    <ScrollToTop/>
   </Fragment>
 )
 

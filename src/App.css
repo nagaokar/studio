@@ -145,26 +145,35 @@ ul {
 }
 
 .photo-container {
-    margin-top: 10rem;
+    margin-top: 3rem;
     padding-left: 0rem;
 }
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+    animation: fadeIn 1.2s ease-in-out 1s both;
+    cursor: pointer;
+  }
+
+h3 .scroll-to-top {
+    font-size: xx-large;
+    font-weight: 200;;
+  }
 
 /* =================================== Individual Project Pages  ================================= */
 
 .proj-img {
     width: 100%;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
-.desc-text {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    justify-content: center;
-    text-justify:inherit;
-    justify-items: center;
-    justify-self: center;
-
+.photo-container .desc-text {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
 }
 
 .sidebar {
