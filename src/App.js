@@ -162,9 +162,9 @@ const Projects = () => (
           <hr style={{marginBottom:"1em", marginTop:"2.5rem"}}></hr>
           <div className="projects-wrapper">
             <div className="projects-list"> 
-              <a className="cover-img" href="/studio/cityzen"><img className="cover-img" src={CityzenCover}></img></a> 
-              <a className="cover-img" href="/studio/ps2"><img className="cover-img" src={PS2Cover}></img></a>
-              <a className="cover-img" href="/studio/ps1"><img className="cover-img" src={PS1Cover}></img></a>
+              <a className="cover-img c-img1 cssanimation sequence fadeInBottom" href="/studio/cityzen"><img className="cover-img" src={CityzenCover}></img></a> 
+              <a className="cover-img c-img2 cssanimation sequence fadeInBottom" href="/studio/ps2"><img className="cover-img" src={PS2Cover}></img></a>
+              <a className="cover-img c-img3 cssanimation sequence fadeInBottom" href="/studio/ps1"><img className="cover-img" src={PS1Cover}></img></a>
             </div>
           </div>
       </div>

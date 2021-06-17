@@ -136,7 +136,12 @@ ul {
 
 .projects-list {
     display:flex;
+    overflow-y: hidden;
+}
 
+.photo-container {
+    margin-top: 3rem;
+    padding-left: 0rem;
 }
 
 .cover-img {
@@ -152,10 +157,12 @@ ul {
     opacity: 0%;
 }
 
-.photo-container {
-    margin-top: 3rem;
-    padding-left: 0rem;
-}
+.c-img1 { animation-delay: 0.5s; }
+
+.c-img2 { animation-delay: 0.8s; }
+
+.c-img3 { animation-delay: 1.1s; }
+
 
 .scroll-to-top {
     position: fixed;
