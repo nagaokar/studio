@@ -3,7 +3,11 @@ import { BrowserRouter as Router, Route, Link, Switch, useRouteMatch, useParams 
 import Navigation from './Components/Navigation';
 import ScrollToTop from './Components/ScrollToTop';
 // import Cityzen3 from './Components/Cityzen3';
+
+// Project Pages ========================================
 import Cityzen from './Components/ProjectPages/Cityzen'
+import Ps1 from './Components/ProjectPages/Ps1'
+import Ps2 from './Components/ProjectPages/Ps2'
 
 import './App.css'
 
@@ -18,6 +22,8 @@ import IssuuLogo from './Images/Icons/IssuuLogo@2x.png'
 
 // Projects Cover Photos ======================================
 import CityzenCover from './Images/CoverImages/CityzenCover.png'
+import PS2Cover from './Images/CoverImages/PS2Cover.png'
+import PS1Cover from './Images/CoverImages/PS1Cover.png'
 
 
 export default function App() {
@@ -32,8 +38,8 @@ export default function App() {
           <Route path="/projects" component={Projects}/>
 {/* ====================================================== Projects Links ========================================= */}
           <Route path="/cityzen" component={CityzenPage} />
-          {/* <Route path="/#2" component={Project2} />
-          <Route path="/#2" component={Project3} /> */}
+          <Route path="/ps1" component={Ps1Page} />
+          <Route path="/ps2" component={Ps2Page} />
 {/* -=============================================== End of Projects Links ========================================= */}
           {/* <Route render={_404page} /> */}
         </Switch>
@@ -160,11 +166,10 @@ const Projects = () => (
           <div className="projects-wrapper">
             <div className="projects-list"> 
               <a href="/studio/cityzen"><img className="cover-img" src={CityzenCover}></img></a> 
+              <a href="/studio/ps2"><img className="cover-img" src={PS2Cover}></img></a>
+              <a href="/studio/ps1"><img className="cover-img" src={PS1Cover}></img></a>
               <img className="cover-img" src="https://via.placeholder.com/400"></img>
               <img className="cover-img" src="https://via.placeholder.com/400"></img>
-              <img className="cover-img" src="https://via.placeholder.com/400"></img>
-              <img className="cover-img" src="https://via.placeholder.com/400"></img>
-
             </div>
           </div>
       </div>
@@ -176,6 +181,23 @@ const CityzenPage = () => (
   <Fragment>
     <Navigation/>
     <Cityzen/>
+    <ScrollToTop/>
+  </Fragment>
+)
+
+
+const Ps1Page = () => (
+  <Fragment>
+    <Navigation/>
+    <Ps1/>
+    <ScrollToTop/>
+  </Fragment>
+)
+
+const Ps2Page = () => (
+  <Fragment>
+    <Navigation/>
+    <Ps2/>
     <ScrollToTop/>
   </Fragment>
 )
