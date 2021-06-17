@@ -22,7 +22,7 @@ class Cityzen extends Component {
             projectTitle: "Syntactical Restoration", 
             secondLine: "Adaptive Re-Use of the Grade II listed 'Righton Building' in partnership with MMU Estates. ",
             organisation: "CPU.Ai Lab at the Manchester School of Architecture",
-            date: "Jan - May 2020",
+            date: "Jan-May 2020",
             portfolioURL: "",
 
         }

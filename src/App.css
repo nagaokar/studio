@@ -130,7 +130,7 @@ ul {
 }
 
 .projects-wrapper {
-    overflow-x: scroll;
+    overflow-x: auto;
 
 }
 
@@ -142,6 +142,14 @@ ul {
 .cover-img {
     margin: 0.5rem;
     max-width: 400px;
+}
+
+.cover-img:hover {
+    opacity: 50%;
+}
+
+.cover-img:active {
+    opacity: 0%;
 }
 
 .photo-container {

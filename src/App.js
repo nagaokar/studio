@@ -59,9 +59,6 @@ const Home = () => (
             an MA Architecture graduate <br></br>
             specialising in computational design.
           </h3>
-          <h3 className="intro-text2 cssanimation sequence fadeInBottom">
-            Welcome to my website.
-          </h3>
         </div>
         <div className="home-logo">
           {/* //TODO ADD PICTORIAL LOGO HERE */}
@@ -165,11 +162,9 @@ const Projects = () => (
           <hr style={{marginBottom:"1em", marginTop:"2.5rem"}}></hr>
           <div className="projects-wrapper">
             <div className="projects-list"> 
-              <a href="/studio/cityzen"><img className="cover-img" src={CityzenCover}></img></a> 
-              <a href="/studio/ps2"><img className="cover-img" src={PS2Cover}></img></a>
-              <a href="/studio/ps1"><img className="cover-img" src={PS1Cover}></img></a>
-              <img className="cover-img" src="https://via.placeholder.com/400"></img>
-              <img className="cover-img" src="https://via.placeholder.com/400"></img>
+              <a className="cover-img" href="/studio/cityzen"><img className="cover-img" src={CityzenCover}></img></a> 
+              <a className="cover-img" href="/studio/ps2"><img className="cover-img" src={PS2Cover}></img></a>
+              <a className="cover-img" href="/studio/ps1"><img className="cover-img" src={PS1Cover}></img></a>
             </div>
           </div>
       </div>
@@ -203,7 +198,7 @@ const Ps2Page = () => (
 )
 
 {/* =================================== ProjectPageNavigation  ================================= */}
-{/* <div className="sidebar">
+{/* <div className="sidebar"
     <div className="projects-title cssanimation sequence fadeInBottom"><h1>Projects</h1></div>
     <div className="projects-nav">
       <p>Project1Name</p>

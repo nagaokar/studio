@@ -8,10 +8,10 @@ import IssuuLogo from '../../Images/Icons/IssuuLogo@2x.png'
 
 // Project Info ======================================
 import CityzenCover from '../../Images/CoverImages/CityzenCover.png'
-import img1 from '../../Images/Cityzen3/C3_pg1.png'
-import img2 from '../../Images/Cityzen3/C3_devRole.png'
-import img3 from '../../Images/Cityzen3/C3_envRole.png'
-import img4 from '../../Images/Cityzen3/C3_entRole.png'
+import img1 from '../../Images/PS1/TriangleExplain.png'
+import img2 from '../../Images/PS1/notNiceRender.png'
+import img3 from '../../Images/PS1/NiceRender.png'
+import img4 from '../../Images/PS1/InternalRender.png'
 
 
 class Cityzen extends Component {
@@ -19,11 +19,11 @@ class Cityzen extends Component {
         super();
         this.state = {
             coverImage: {CityzenCover},  //replace with contextual info for project
-            projectTitle: "Cityzen", 
-            secondLine: "A participatory planning game for the zero-carbon development of the Northern Gateway, Manchester.",
+            projectTitle: "Architect-Tron", 
+            secondLine: "An interactive generative design tool for social housing in the UK. ",
             organisation: "CPU.Ai Lab at the Manchester School of Architecture",
-            date: "2020 - 2021",
-            portfolioURL: "https://issuu.com/nagaokastudio/docs/studio_three_25_05_21",
+            date: "Sept-Dec 2019",
+            portfolioURL: "https://issuu.com/home/published/group_portfolio_final",
 
         }
     }
@@ -40,16 +40,20 @@ class Cityzen extends Component {
                     <div className="desc-text">
                         <h4>Project Summary</h4>
                         <p>
-                            Cityzen is an online multiplayer city-builder game where players must compete and
-                            cooperate to create a masterplan which balances environmental sustainability with social equity.
+                        For this project, a Machine Learning Algorithm was created in Grasshopper (a visual coding interface built into
+                        the 3D modelling software Rhino). Using this, an interface and digital tool was created in which users were able to
+                        configure the architectural massing using easily distinguishable sliders based upon the UK government guidance on
+                        housing quality.
                         </p>
                         <p>
-                            Completed games are uploaded to the Cityzen Hub, a purpose built website enabling communities
-                            and officials to view all previously played games with data selection features.            
+                        This tool was applied for the design of social housing in Manchester, where Design 
+                        for Manufacture and Offsite construction was utilised for the construction strategy.
                         </p>
                         <p>
-                            Cityzen is conceptualised as a modern method of planning, utilising the Unity game engine and 
-                            standard web development languages to formulate a more inclusive approach to city planning. 
+                        The factors that the algorithm was fed included: environmental analysis of the selected site, demography of context and housing shortages, 
+                        potential revenue of each unit type (e.g. studio, 2bed1bathroom, 2bed2bathroom, etc.), available structural systems.. etc. <br></br> 
+                        This list is limited but, in essence, the programme was designed to reduce the architectural design process and 'quality' to a accounting
+                        excersize, where cost/benefit analysis became the design driver.
                         </p>
 
                     </div>
@@ -65,15 +69,15 @@ class Cityzen extends Component {
                 <div className="photo-container">
                     <img className="proj-img" src={img1}></img>
                     <div className="desc-text">
-                        <h3>Gameboard</h3>
+                        {/* <h3>Gameboard</h3>
                         <p>
                         The gameboard is the existing neighbourhood of Collyhurst, an area to be redeveloped under the
                         Northern Gateway regeneration project, a £1 billion investment which aims to create a new family-oriented,
                         green neighbourhood at the Manchester city centre periphery.
-                        </p>
+                        </p> */}
                     </div>
                     <img className="proj-img" src={img2}></img>
-                    <div className="desc-text">
+                    {/* <div className="desc-text">
                         <h3>Working in partnership</h3>
                         <p>
                         This MA thesis was completed in partnership with the developers of the Northern Gateway, 
@@ -81,15 +85,8 @@ class Cityzen extends Component {
                         was to create an engaging, informative and entertaining digital community planning process 
                         which inclusively builds towards a better tomorrow.                             
                         </p>
-                    </div>
+                    </div> */}
                     <img className="proj-img" src={img3}></img>
-                    <div className="desc-text">
-                        <h3>Cityzen Hub</h3>
-                        <p>
-                        The website acts as a public forum and a data analysis platform, where community engagement
-                        can be quantified by city planners for real-world implementation.                             
-                        </p>
-                    </div>
                     <img className="proj-img" src={img4}></img>
                     <div className="desc-text">
                         <h3>Full Portfolio</h3>
