@@ -8,6 +8,8 @@ import ScrollToTop from './Components/ScrollToTop';
 import Cityzen from './Components/ProjectPages/Cityzen'
 import Ps1 from './Components/ProjectPages/Ps1'
 import Ps2 from './Components/ProjectPages/Ps2'
+import Dissertation from './Components/ProjectPages/Dissertation'
+
 
 import './App.css'
 
@@ -24,6 +26,7 @@ import IssuuLogo from './Images/Icons/IssuuLogo@2x.png'
 import CityzenCover from './Images/CoverImages/CityzenCover.png'
 import PS2Cover from './Images/CoverImages/PS2Cover.png'
 import PS1Cover from './Images/CoverImages/PS1Cover.png'
+import DissCover from './Images/CoverImages/DissCover.png'
 
 
 export default function App() {
@@ -40,6 +43,7 @@ export default function App() {
           <Route path="/cityzen" component={CityzenPage} />
           <Route path="/ps1" component={Ps1Page} />
           <Route path="/ps2" component={Ps2Page} />
+          <Route path="/diss" component={DissPage} />
 {/* -=============================================== End of Projects Links ========================================= */}
           {/* <Route render={_404page} /> */}
         </Switch>
@@ -165,6 +169,7 @@ const Projects = () => (
               <a className="cover-img c-img1 cssanimation sequence fadeInBottom" href="/studio/cityzen"><img className="cover-img" src={CityzenCover}></img></a> 
               <a className="cover-img c-img2 cssanimation sequence fadeInBottom" href="/studio/ps2"><img className="cover-img" src={PS2Cover}></img></a>
               <a className="cover-img c-img3 cssanimation sequence fadeInBottom" href="/studio/ps1"><img className="cover-img" src={PS1Cover}></img></a>
+              <a className="cover-img c-img4 cssanimation sequence fadeInBottom" href="/studio/diss"><img className="cover-img" src={DissCover}></img></a>
             </div>
           </div>
       </div>
@@ -193,6 +198,14 @@ const Ps2Page = () => (
   <Fragment>
     <Navigation/>
     <Ps2/>
+    <ScrollToTop/>
+  </Fragment>
+)
+
+const DissPage = () => (
+  <Fragment>
+    <Navigation/>
+    <Dissertation/>
     <ScrollToTop/>
   </Fragment>
 )

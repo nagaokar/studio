@@ -129,14 +129,18 @@ ul {
     font-weight: 700;
 }
 
-.projects-wrapper {
-    overflow-x: auto;
-
-}
 
 .projects-list {
     display:flex;
+    justify-content: flex-start;
+    align-items: center;
     overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.projects-wrapper {
+    overflow-x: hidden;
+
 }
 
 .photo-container {
@@ -145,8 +149,7 @@ ul {
 }
 
 .cover-img {
-    margin: 0.5rem;
-    max-width: 400px;
+    max-width: 100%;
 }
 
 .cover-img:hover {
@@ -162,6 +165,8 @@ ul {
 .c-img2 { animation-delay: 0.8s; }
 
 .c-img3 { animation-delay: 1.1s; }
+
+.c-img4 { animation-delay: 1.4s; }
 
 
 .scroll-to-top {
