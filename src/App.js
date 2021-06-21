@@ -135,7 +135,7 @@ const About = () => (
             <div className="p-subtitle">
               <p>Take a look at my resume:</p>
               </div>
-              <a href="https://drive.google.com/file/d/1YwbL4T1tiOy8Rzlmf9-tzSt3qa_PbrQM/view?usp=sharing" 
+              <a href="https://docs.google.com/document/d/1IZlFOOcGmlEBUIueqJPDV3XAwxr6XBHtJtxaHwJ6g0E/edit?usp=sharing" 
                 target="_blank" rel="noopener noreferrer">
                   <img className="social-icon" src={CVLogo}>
                   </img>
